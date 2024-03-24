@@ -30,15 +30,21 @@
         .contenedor-botones {
             position: fixed;
             top: 10px;
-            right: 100px;
+            right: 10px;
+        }
+
+        .contenedor-texto {
+            position: fixed;
+            top: 1000px;
+            left: 10px;
         }
 
         .btn {
             cursor: pointer;
             background: rgb(159, 164, 167);
             display: inline block;
-            width: 45px;
-            height: 45px;
+            width: 42px;
+            height: 42px;
             display: inline-flex;
             justify-content: center;
             align-items: center;
@@ -101,7 +107,12 @@
 
         <br><br>
 
-        <img src="Banner juego de la vida.png" alt="conway underbanner">
+        <div><img src="Conway style.png" alt="conway underbanner" > </div>
+
+        
+       
+
+        
 
         
 
@@ -118,6 +129,50 @@
         
 
     </div>
+
+    <div id="contenedor-texto">
+
+       <div> <mark style="background-color: rgb(14, 14, 14);">  <font color="white"> <big><big><big><big><big>El Juego de la Vida de Conway. </big></big></big></big> </font> </mark>
+       </div>
+       <div> <mark style="background-color: rgb(31, 31, 31);">  <font color="white"> El juego de la vida es un autómata celular diseñado por John H. Conway en 1970 el cual consiste de células dentro de una cuadrícula, las cuales se pueden encontrar en dos posibles estados: vivas o muertas. Las reglas con las cuales se decide si una célula vive o muere dependen del estado de sus 8 células vecinas y son las siguientes:</font> </mark>
+       </div>
+
+       <div> <mark style="background-color: black;">  <font color="white"> <b><big> a) Si una célula viva cuenta con 2 ó 3 células vecinas vivas, entonces se mantendrá viva. </b></big> </font> </mark>
+       </div>
+       <div> <mark style="background-color: black;">  <font color="white"> <b><big> b)  Por el contrario, si una célula cuenta con menos de 2 o más de 3 vecinas vivas, entonces morirá de soledad o sobrepoblación.</b></big> </font> </mark>
+       </div>
+       <div> <mark style="background-color:black;">  <font color="white"> <b><big> c) Finalmente, si una célula muerta cuenta con exáctamente 3 células vecinas vivas, entonces cobrará vida. </b></big></font> </mark>
+       </div>
+
+       <div> <mark style="background-color: rgb(31, 31, 31);">  <font color="white">  Apartir de estas sencillas reglas se derivan comportamientos extraordinarios los cuales han cautivado a miles de personas alrededor del mundo. En esta página les presentamos una versión del juego de la vida en la que la vida y la muerte se encuentran representadas por medio de notas músicales. El espacio que decidimos utilizar para realizar este juego es un toro geométrico, esto quiere decir que las células de la pared derecha son vecinas de aquellas en la pared izquierda, e igualmente, las celulas del techo son vecinas con las células del piso. Este espacio nos ofrece la ventaja de poder crear autómatas los cuales recorran caminos infinitos dentro una cuadrícula finita de 8x8 células. Para corroborar este hecho y familiarizarse con este espacio les recomendamos los siguientes autómatas:</font> </mark>
+       </div>
+
+       <div><img style='border:5px solid #000000' src="Automata recomendado 1.png" alt="conway underbanner" width="300" 
+        height="300" ><img style='border:5px solid #000000' src="Automata recomendado 3.png" alt="conway underbanner" width="300" 
+        height="300"> <img style='border:5px solid #000000' src="Automata recomendado 4.png" alt="conway underbanner" width="300" 
+        height="300"></div>
+        <div><img style='border:5px solid #000000' src="Automata recomendado 2.png" alt="conway underbanner"width="300" 
+        height="300"> <img style='border:5px solid #000000' src="Automata recomendado 5.png" alt="conway underbanner" width="300" 
+        height="300"> <img style='border:5px solid #000000' src="automata recomendado 6.png" alt="conway underbanner" width="300" 
+        height="300"></div>
+
+        <div> <mark style="background-color: rgb(14, 14, 14);">  <font color="white"> <big><big><big><big><big>Instrucciones: </big></big></big></big> </font> </mark>
+       </div>
+
+        <div> <mark style="background-color: rgb(31, 31, 31);">  <font color="white"> Para encender una célula basta con dar click sobre de ella. Una vez que hayas encendido las células con las que quieras empezar a jugar, presiona el botón "Play" o la barra espaciadora para iniciar o pausar el juego. Si quieres recorrer iteración por iteración del juego utiliza el botón "Siguiente iteración" o presiona la tecla D en tu teclado. Para encender células de manera aleatoria utiliza el botón "Aleatorio" o la tecla R. Para apagar a todas las células vivas de la panatalla usa el botón "Borrar" o la tecla Shift. Finalmente utiliza los botones "Acercar" y "Alejar" para ajustar el tamaño de la cuadricula y los botones "Bajar volumen" y "Subir volumen" para controlar el volumen del juego. Ahora que sabes como jugar, diviértete y crea nuevos automatas y melodías a tu manera.
+
+        </div>
+       
+
+    
+
+       
+
+
+
+    </div>
+
+
 
     <!-- JS (Lógica) -->
     <script>
